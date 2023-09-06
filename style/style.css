@@ -1,0 +1,102 @@
+@import url("./fontes.css");
+@import url("./cores.css");
+@import url("./global.css");
+
+
+.header__bg{
+  border-bottom-left-radius: 100px;
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+  background-size: auto, auto;
+background-position: -450px center,center center;
+  background-repeat: no-repeat;
+}
+.header__container{
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+.header__top{
+  padding:59px 20px 119px;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+}
+
+.header__nav{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__list{
+  display: flex;
+  gap: 32px;
+}
+
+.header__nav a{
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nav__item a{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav__login-btn{
+  margin-right: 32px;
+
+}
+
+.login__area .nav__cadastro-btn{
+  padding: 15px 40px;
+  background-color: #fff;
+  border-radius: 28px;
+  color: var(--cor-1);
+}
+
+.header__description{
+  text-align: center;
+  padding-bottom: 155px;
+}
+
+.description__title{
+  font-size: 64px;
+  color: var(--cor-4);
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.description__text{
+  font-size: 20px;
+  color: var(--cor-4);
+  font-weight: 400;
+}
+
+.description__join{
+  margin-top: 48px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.description__start-btn{
+  padding: 15px 17px;
+  background-color: var(--cor-4);
+  color: var(--cor-1);
+  border-radius: 28px;
+  margin-right: 16px;
+  display: inline-block;
+ 
+}
+
+.description__learn-btn{
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 28px;
+  color:var(--cor-4)
+}
