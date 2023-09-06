@@ -46,6 +46,28 @@ background-position: -450px center,center center;
   gap: 8px;
 }
 
+.nav__submenu{
+  position: absolute;
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  width: 168px;
+  margin-top: 27px;
+  margin-left: -30px;
+  visibility: hidden;
+  
+}
+
+.nav__submenu a{
+  color: #2d2d2d;
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+
 .nav__login-btn{
   margin-right: 32px;
 
@@ -56,6 +78,12 @@ background-position: -450px center,center center;
   background-color: #fff;
   border-radius: 28px;
   color: var(--cor-1);
+  transition: .3s;
+}
+
+.login__area .nav__cadastro-btn:hover{
+  background-color: #FF7B86;
+  color: var(--cor-4);
 }
 
 .header__description{
@@ -90,7 +118,13 @@ background-position: -450px center,center center;
   border-radius: 28px;
   margin-right: 16px;
   display: inline-block;
+  transition: .3s;
  
+}
+
+.description__start-btn:hover{
+  background-color: #FF7B86;
+  color: var(--cor-4);
 }
 
 .description__learn-btn{
@@ -98,5 +132,42 @@ background-position: -450px center,center center;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 28px;
-  color:var(--cor-4)
+  color:var(--cor-4);
+  transition: .3s;
+}
+
+.description__learn-btn:hover{
+  background-color: #fff;
+  color: #FF7B86;
+}
+
+.menu-hb{
+  display: none;
+}
+
+.connect:hover .nav__submenu{
+  visibility:visible;
+}
+@media (max-width:800px){
+  .description__title{
+    font-size: 36px;
+    max-width: 14ch;
+    margin: 0 auto;
+  }
+
+  .header__top{
+    padding-bottom: 108px;
+  }
+
+  .header__nav{
+    display: none;
+  }
+
+  .menu-hb{
+    display: block;
+  }
+
+  .header__top{
+    justify-content: space-between;
+  }
 }
