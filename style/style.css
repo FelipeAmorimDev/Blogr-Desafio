@@ -388,3 +388,62 @@ margin-bottom: 64px;
     top: 40px;
    }
 }
+
+/* footer */
+
+.footer__bg{
+  background-color: #24242C;
+  border-top-right-radius: 100px;
+}
+
+.footer__container{
+  max-width: 1115px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.footer__menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__item h4{
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer__links{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #fff;
+}
+
+@media(max-width:700px){
+  .footer__container{
+    grid-template-columns: 1fr;
+    gap:40px;
+    justify-content: center;
+  }
+
+  .footer__logo{
+    justify-self: center;
+  }
+  .footer__menu{
+    align-items: center;
+  }
+}
+
+@media(max-width:600px){
+  .footer__menu{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+}
