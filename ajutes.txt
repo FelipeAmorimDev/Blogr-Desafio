@@ -1,0 +1,7 @@
+ajusta o pattern do bg
+ajustar o submenu hover
+ajusta o menu hb
+corrigir hover dos links
+
+altura da linha dos paragrafos dentro de description
+cor bg da seção description
