@@ -39,8 +39,8 @@ background-position: -450px center,center center;
   font-size: 16px;
   font-weight: 700;
 }
-.nav__item:hover a{
-  border-bottom: 1px solid #fff;
+.nav__item a:hover{
+  text-decoration: underline;
 }
 .nav__item a{
   display: flex;
@@ -147,9 +147,6 @@ background-position: -450px center,center center;
   display: none;
 }
 
-.connect:hover .nav__submenu{
-  visibility:visible;
-}
 @media (max-width:800px){
   .description__title{
     font-size: 36px;
@@ -165,12 +162,80 @@ background-position: -450px center,center center;
     display: none;
   }
 
+  .header__nav.ativo {
+    position: absolute;
+    display: flex;
+    top: 140px;
+    left: 0;
+    width: calc(100% - 80px);
+    margin: 0px 20px;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    padding: 37px 20px;
+    border-radius: 4px;
+  }
+
+  .nav__list{
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+ .header__nav a{
+  color: var(--cor-3);
+ }
+ .nav__login-btn{
+  margin: 0px 0px 24px;
+ }
+ .nav__item a{
+  gap: 0px;
+ }
+
+ .login__area{
+  border-top: 1px solid #E8E4E4;
+  padding-top: 24px;
+ }
+
+ .nav__item > a{
+  gap: 8px;
+ }
+ .nav__cadastro-btn{
+  background-image: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+  color: white !important;
+ }
+
+ .nav__submenu{
+  position: static;
+  visibility: visible;
+  display: none;
+  width: 276px;
+  background-color: #e2e3f2;
+  align-items: center;
+  margin-left: 0px;
+ }
+
+  .login__area{
+    color: red;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
   .menu-hb{
     display: block;
   }
 
   .header__top{
     justify-content: space-between;
+  }
+
+  .connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -424,6 +489,14 @@ margin-bottom: 64px;
   color: #fff;
 }
 
+.footer__link a{
+  padding: 5px 0px;
+  display: inline-block;
+}
+
+.footer__link a:hover{
+  text-decoration: underline;
+}
 @media(max-width:700px){
   .footer__container{
     grid-template-columns: 1fr;
@@ -446,4 +519,9 @@ margin-bottom: 64px;
     text-align: center;
     gap: 40px;
   }
+}
+
+.show{
+  display: flex;
+  visibility: visible;
 }
